@@ -77,16 +77,15 @@ data.
 
 ## AI declaration
 
-I used [name the AI tools you actually used — e.g. Claude (Anthropic),
-ChatGPT, GitHub Copilot] as coding assistants to help with boilerplate,
+I used Claude (Anthropic), GitHub as coding assistants to help with boilerplate,
 docstring wording, and debugging error messages. All logic was reviewed,
-hand-verified against numerical examples (or the tests in `tests/`), and
+hand-verified against numerical examples and
 discussed with the assistant before being accepted. No code was submitted
 without understanding every line.
 
 ## Reproducibility
 
-All random operations use `np.random.default_rng(seed)` with fixed seeds. Every
+All random operations used `np.random.default_rng(seed)` with fixed seeds. Every
 notebook runs top to bottom via *Restart & Run All* without errors. The test
 suite covers normal cases and edge cases (empty input, negative values, singular
 matrices, zero passengers, etc.).
